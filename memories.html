@@ -49,7 +49,7 @@ Is there anything inside the [[locket]]??
 Where&#39;s this [[teddy bear]] from again?
 Why are there [[sunglasses]] in here??
 
-(set: $glasses to 0)</tw-passagedata><tw-passagedata pid="2" name="locket" tags="" position="121,424" size="100,100">&lt;img src=&quot;https://p1.pxfuel.com/preview/475/771/715/necklace-with-winged-heart-winged-heart-red-heart-necklace-royalty-free-thumbnail.jpg&quot;&gt;
+(set: $glasses to 0)</tw-passagedata><tw-passagedata pid="2" name="locket" tags="" position="44,320" size="100,100">&lt;img src=&quot;https://p1.pxfuel.com/preview/475/771/715/necklace-with-winged-heart-winged-heart-red-heart-necklace-royalty-free-thumbnail.jpg&quot;&gt;
 (set: $count to (count: (History:), &quot;locket&quot;))
 (if: $count is 0)[
 You open the locket and find a picture of your grandmother. You found it in a closet at her once when you were younger. Maybe you should visit her soon... it&#39;s been a long time since your last visit. 
@@ -61,7 +61,7 @@ You see a couple beads poking out from underneath the teddy bear, near where the
 Those beads look like they&#39;re part of a [[bracelet]]...
 Pick up the [[teddy bear]].
 Seriously, why save a pair of [[sunglasses]]?
-](else-if: $count is 1)[
+](else-if: $count&gt;=1)[
 There&#39;s nana again... What else is in here?
 
 &lt;hr&gt;
@@ -71,7 +71,7 @@ a [[teddy bear]]...
 and a pair of [[sunglasses]]...
 what looks like part of a [[hair clip]]...
 and maybe a [[photo]]?
-]</tw-passagedata><tw-passagedata pid="3" name="teddy bear" tags="" position="474,385" size="100,100">&lt;img src=&quot;https://i.ebayimg.com/images/g/Qy0AAOSwBahVfh2V/s-l400.jpg&quot;&gt;
+]</tw-passagedata><tw-passagedata pid="3" name="teddy bear" tags="" position="395,325" size="100,100">&lt;img src=&quot;https://i.ebayimg.com/images/g/Qy0AAOSwBahVfh2V/s-l400.jpg&quot;&gt;
 
 (set: $count to (count: (History:), &quot;teddy bear&quot;))
 (if: $count is 0)[
@@ -85,7 +85,7 @@ Oh, look, a [[ticket stub]]!
 That&#39;s a cute [[bracelet]]...
 And there&#39;s still the [[locket]]...
 What&#39;s the deal with those [[sunglasses]]?]
-(else-if: $count is 1)[
+(else-if: $count&gt;=1)[
 This teddy bear is kind of sad now that you look at it again... Maybe not the best to console an upset child with.
 
 &lt;hr&gt;
@@ -97,7 +97,7 @@ Seriously, why the [[sunglasses]]?
 That looks like a [[note]]...
 Is that a [[hair clip]]?
 ]
-</tw-passagedata><tw-passagedata pid="4" name="sunglasses" tags="" position="771,363" size="100,100">(set: $glasses to $glasses + 1)
+</tw-passagedata><tw-passagedata pid="4" name="sunglasses" tags="" position="735,318" size="100,100">(set: $glasses to $glasses + 1)
 (set: $count to (count: (History:), &quot;ticket stub&quot;))
 (if: $count is 0)[
 &lt;img src=&quot;https://www.whattopack.com/wp-content/uploads/sites/34/2019/05/Ray-Ban-Sunglasses-Laying-on-a-Table-550x413.jpg&quot;&gt;
@@ -110,7 +110,7 @@ Underneath the sunglasses, you spot a sliver of what looks like a ticket stub...
 Look at the [[ticket stub]]. 
 What&#39;s in the [[locket]]?
 This [[teddy bear]] is cute!
-](else-if: $count is 1)[
+](else-if: $count&gt;=1)[
 &lt;img src=&quot;https://www.rollingstone.com/wp-content/uploads/2021/05/AdobeStock_104832960.jpeg?resize=1800,1200&amp;w=450&quot;&gt;
 
 Oh! Now you remember! You wore these sunglasses to your first music festival. You and your friends drove a couple hours one summer during high school to see some of your favorite bands. It was unbearably hot and you came home with the worst sunburn you&#39;ve ever had. You remember that the glasses made the world look warm, rose-colored even. 
@@ -124,7 +124,7 @@ This [[teddy bear]] is cute!
 Looks like there&#39;s a [[bracelet]] too...
 Is that a [[photo]]?
 What&#39;s that [[note]]?
-]</tw-passagedata><tw-passagedata pid="5" name="ticket stub" tags="" position="320,518" size="100,100">&lt;img src=&quot;https://www.picclickimg.com/d/l400/pict/253720328939_/Vans-Warped-Tour-03-RARE-UNUSED-2003-CONCERT.jpg&quot;&gt;
+]</tw-passagedata><tw-passagedata pid="5" name="ticket stub" tags="" position="199,483" size="100,100">&lt;img src=&quot;https://www.picclickimg.com/d/l400/pict/253720328939_/Vans-Warped-Tour-03-RARE-UNUSED-2003-CONCERT.jpg&quot;&gt;
 (set: $count to (count: (History:), &quot;ticket stub&quot;))
 (if: $count is 0)[
 The ticket stub reads out: &quot;Vans Warped Tour &#39;03.&quot; It&#39;s from a music festival you went to during high school with your friends. Wait... now the sunglasses are starting to look a little more familiar...
@@ -135,7 +135,7 @@ Check out the [[sunglasses]].
 What about that [[locket]]?
 What a cute [[teddy bear]].
 Looks like there&#39;s a [[bracelet]] too...
-](else-if: $count is 1)
+](else-if: $count&gt;=1)
 [
 Maybe you should get everyone together again to go to another festival... but you&#39;re all so busy now. Could be worth [[sending a text]].
 
@@ -146,7 +146,7 @@ Take a look at the [[locket]].
 That [[teddy bear]] is so cute.
 Look at that [[bracelet]] peeking through...
 and is that a [[hair clip]]?
-]</tw-passagedata><tw-passagedata pid="6" name="bracelet" tags="" position="620,492" size="100,100">&lt;img src=&quot;https://lh3.googleusercontent.com/proxy/eY9SBH_jl4_GtJk7G3hsZow5c_PSOwsPmAwJ5qUjFwhdfkTZLN0Mha7QY6oHW-olVzZxP5zAX4bwefuWCR1ZPGQ7-RFst1_eJ02n0tZZLw8gMef4wUgkxlWW0opJ4vvOE2n_R5lky7OfDKiStUJ0eDcqxSYJwFq2V7aisTak&quot;&gt;
+]</tw-passagedata><tw-passagedata pid="6" name="bracelet" tags="" position="555,480" size="100,100">&lt;img src=&quot;https://lh3.googleusercontent.com/proxy/eY9SBH_jl4_GtJk7G3hsZow5c_PSOwsPmAwJ5qUjFwhdfkTZLN0Mha7QY6oHW-olVzZxP5zAX4bwefuWCR1ZPGQ7-RFst1_eJ02n0tZZLw8gMef4wUgkxlWW0opJ4vvOE2n_R5lky7OfDKiStUJ0eDcqxSYJwFq2V7aisTak&quot;&gt;
 (set: $count to (count: (History:), &quot;bracelet&quot;))
 (if: $count is 0)[
 The bracelet brings you right back to middle school. You and your two best friends made each other friendshp bracelets to wear to graduation. Yours reads out &quot;BFFL&quot; -- best friends for life. All three of you went to different high schools, growing apart slowly as you made different friends. Funny how things change.
@@ -162,7 +162,7 @@ the [[locket]]...
 a pair of [[sunglasses]]...
 the cute [[teddy bear]]...
 and a [[ticket stub]].
-](else-if: $count is 1)[
+](else-if: $count&gt;=1)[
 Why do people stop making friendship bracelets when they grow up? This is kind of cute.
 
 &lt;hr&gt;
@@ -175,7 +175,7 @@ a [[locket]]...
 a pair of [[sunglasses]]...
 a [[teddy bear]]...
 and a [[ticket stub]].
-]</tw-passagedata><tw-passagedata pid="7" name="photo" tags="" position="433,704" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/82/96/79/82967997952c4382d537f23e9fc21463.jpg&quot; width=500px height=460px&gt;
+]</tw-passagedata><tw-passagedata pid="7" name="photo" tags="" position="369,596" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/82/96/79/82967997952c4382d537f23e9fc21463.jpg&quot; width=500px height=460px&gt;
 (set: $count to (count: (History:), &quot;photo&quot;))
 (if: $count is 0)[
 The photo is a polaroid of you and your friends during the summer before your freshman year of college. You all look different but familiar. 
@@ -191,7 +191,7 @@ What&#39;s this [[ticket stub]] from?
 Look inside the [[locket]].
 Pick up the [[teddy bear]].
 There&#39;s that pair of [[sunglasses]]...
-](else-if: $count is 1)[
+](else-if: $count&gt;=1)[
 You can&#39;t help but look at the photo again. You remember taking more so everyone could take a photo home... you [[text your friends to see if they still have theirs.]]
 
 
@@ -204,7 +204,7 @@ What&#39;s this [[ticket stub]] from?
 Look inside the [[locket]].
 Pick up the [[teddy bear]].
 There&#39;s that pair of [[sunglasses]]...
-]</tw-passagedata><tw-passagedata pid="8" name="back of the photo" tags="" position="429,895" size="100,100">&lt;img src=&quot;https://mypolaroidblog.files.wordpress.com/2014/12/polaroid-code-9.jpg&quot; height=300px width=250px&gt;
+]</tw-passagedata><tw-passagedata pid="8" name="back of the photo" tags="" position="390,753" size="100,100">&lt;img src=&quot;https://mypolaroidblog.files.wordpress.com/2014/12/polaroid-code-9.jpg&quot; height=300px width=250px&gt;
 On the back, you scribbled... 
 
 &lt;span class=&quot;photo&quot;&gt;//&quot;July 1980&quot;//&lt;/span&gt;
@@ -218,7 +218,7 @@ Check out the [[bracelet]].
 Is that a [[ticket stub]]?
 What a pretty [[locket]]!
 That [[teddy bear]] is starting to look sad...
-There&#39;s that pair of [[sunglasses]].</tw-passagedata><tw-passagedata pid="9" name="hair clip" tags="" position="74,698" size="100,100">&lt;img src=&quot;https://cdn.shopify.com/s/files/1/2439/3061/products/Pinks-purple-snap-barrettes-with-sheen_grande.jpg?v=1519881067&quot;&gt;
+There&#39;s that pair of [[sunglasses]].</tw-passagedata><tw-passagedata pid="9" name="hair clip" tags="" position="70,617" size="100,100">&lt;img src=&quot;https://cdn.shopify.com/s/files/1/2439/3061/products/Pinks-purple-snap-barrettes-with-sheen_grande.jpg?v=1519881067&quot;&gt;
 (set: $count to (count: (History:), &quot;hair clip&quot;))
 (if: $count is 0)[
 You turn the hair clip over in your hand, examining the flower shape at the end. Your friend Mimi gave it to you when you were in Kindergarden. It was the beginning of your friendship, a playground peace offering. The two of you are getting lunch later this week, so you pocket the hair clip to show to her.
@@ -232,7 +232,7 @@ Examine the [[ticket stub]].
 There&#39;s the [[locket]]...
 and the [[teddy bear]].
 Did you look at the [[sunglasses]] yet?
-](else-if: $count is 1)[
+](else-if: $count&gt;=1)[
 Honestly, this hair clip could be fashionable now... Anyway, back to the rest of the box.
 
 &lt;hr&gt;
@@ -243,7 +243,7 @@ Try on the [[bracelet]].
 Examine the [[ticket stub]].
 There&#39;s the [[locket]]...
 and the [[teddy bear]].
-Did you look at the [[sunglasses]] yet?]</tw-passagedata><tw-passagedata pid="10" name="note" tags="" position="770,710" size="100,100">&lt;img src=&quot;https://lh4.googleusercontent.com/-7yQWqTSN0JY/UQhsrZGGHOI/AAAAAAAAHlA/sKQaFStLalc/s612/IMG_1845.JPG&quot;&gt;
+Did you look at the [[sunglasses]] yet?]</tw-passagedata><tw-passagedata pid="10" name="note" tags="" position="712,605" size="100,100">&lt;img src=&quot;https://lh4.googleusercontent.com/-7yQWqTSN0JY/UQhsrZGGHOI/AAAAAAAAHlA/sKQaFStLalc/s612/IMG_1845.JPG&quot;&gt;
 (set: $count to (count: (History:), &quot;note&quot;))
 (if: $count is 0)[
 The note reads:
@@ -264,7 +264,7 @@ Peek inside the [[locket]].
 What a sweet [[teddy bear]].
 What&#39;s the deal with the [[sunglasses]]?
 
-](else-if: $count is 1)[
+](else-if: $count&gt;=1)[
 There&#39;s the note again...
 
 &lt;span class=&quot;note&quot;&gt;//[Hey! I noticed you weren&#39;t in school yesterday. Everything ok?
@@ -280,7 +280,7 @@ Wait, you kind of remember that [[ticket stub]]...
 Peek inside the [[locket]].
 What a sweet [[teddy bear]].
 What&#39;s the deal with the [[sunglasses]]?
-]</tw-passagedata><tw-passagedata pid="11" name="text your friends to see if they still have theirs." tags="" position="601,802" size="100,100">Your friends send back photos of their polaroids. It&#39;s so interesting how you all have changed over the years.
+]</tw-passagedata><tw-passagedata pid="11" name="text your friends to see if they still have theirs." tags="" position="606,883" size="100,100">Your friends send back photos of their polaroids. It&#39;s so interesting how you all have changed over the years.
 
 &lt;hr&gt;
 
@@ -302,7 +302,7 @@ That&#39;s kind of a cute [[bracelet]].
 What&#39;s this [[ticket stub]] from?
 Look inside the [[locket]].
 Pick up the [[teddy bear]].
-There&#39;s that pair of [[sunglasses]]...</tw-passagedata><tw-passagedata pid="13" name="your mom&#39;s old polaroid camera" tags="" position="429,1045" size="100,100">You text your mom a picture of the polaroid. The two of you reminisce on your high school days.
+There&#39;s that pair of [[sunglasses]]...</tw-passagedata><tw-passagedata pid="13" name="your mom&#39;s old polaroid camera" tags="" position="419,935" size="100,100">You text your mom a picture of the polaroid. The two of you reminisce on your high school days.
 
 &lt;hr&gt;
 
@@ -312,7 +312,7 @@ That&#39;s kind of a cute [[bracelet]].
 What&#39;s this [[ticket stub]] from?
 Look inside the [[locket]].
 Pick up the [[teddy bear]].
-There&#39;s that pair of [[sunglasses]]...</tw-passagedata><tw-passagedata pid="14" name="sending a text" tags="" position="320,668" size="100,100">You text your friends about going to another festival. They&#39;re all excited. You start planning a reunion trip for this summer. Hopefully you&#39;ll all be able to take off work for it...
+There&#39;s that pair of [[sunglasses]]...</tw-passagedata><tw-passagedata pid="14" name="sending a text" tags="" position="264,911" size="100,100">You text your friends about going to another festival. They&#39;re all excited. You start planning a reunion trip for this summer. Hopefully you&#39;ll all be able to take off work for it...
 
 &lt;hr&gt;
 
@@ -320,7 +320,7 @@ Pick up the [[sunglasses]].
 Take a look at the [[locket]].
 That [[teddy bear]] is so cute.
 Look at that [[bracelet]] peeking through...
-and is that a [[hair clip]]?</tw-passagedata><tw-passagedata pid="15" name="them" tags="" position="771,513" size="100,100">You make a note to text your friends later and see if you can all get together sometime soon. You miss them.
+and is that a [[hair clip]]?</tw-passagedata><tw-passagedata pid="15" name="them" tags="" position="898,747" size="100,100">You make a note to text your friends later and see if you can all get together sometime soon. You miss them.
 
 &lt;hr&gt;
 
